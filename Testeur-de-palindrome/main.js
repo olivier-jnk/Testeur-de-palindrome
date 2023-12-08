@@ -12,11 +12,15 @@
             });
         });
 
-
+        
         function isPalindrome (str) {
+        //forcer le mot à se mettre en minuscules
             motC = mot.toLowerCase();
+        //Eclater le mot dans un tableau
             motCS = motC.split("");
+        //Retourner le tableau
             motCSR = motCS.reverse();
+        //Reunir chq lettre du tableau pour former un mot
             motCSRC = motCSR.join("");
 
             if (motCSRC === motC){
