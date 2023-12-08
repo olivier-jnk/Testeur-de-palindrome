@@ -22,7 +22,7 @@
             motCSR = motCS.reverse();
         //Reunir chq lettre du tableau pour former un mot
             motCSRC = motCSR.join("");
-
+                //Si le mot à l'envers correspond à celui à l'endroit, alors c'est un palindrome, sinon ce n'en est pas un.
             if (motCSRC === motC){
                 alert('Le mot est un palindrome: ' +motC+ " à l'envers, ça fait " + motCSRC)
             }else {
@@ -31,7 +31,7 @@
             
 
         }
-        // Appele la fonction isPalindrome (seulement), donc pour l'instant pas nécessaire.
+        // met un prompt pour que l'utilisateur puisse entrer son mot, et appele la fonction isPalindrome
         function verification () {
             mot = prompt("Entrez un mot")
             isPalindrome();
